@@ -1,13 +1,17 @@
 {
-  "root": "./data",
+  "root": "data",
   "port": "8443",
   "serverUri": "https://localhost:8443",
   "webid": true,
+   "localAuth": {
+      "tls": true,
+      "password": true
+    },
   "mount": "/",
   "configPath": "./config",
   "dbPath": "./.db",
-  "sslKey": "./cert.key",
-  "sslCert": "./cert.pem",
+  "sslKey": "./.ssl/*.localhost.key.pem",
+  "sslCert": "./.ssl/*.localhost.crt.pem",
   "multiuser": true,
   "corsProxy": "/proxy"
 }

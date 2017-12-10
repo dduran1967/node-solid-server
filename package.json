@@ -63,7 +63,7 @@
     "nomnom": "^1.8.1",
     "oidc-auth-manager": "^0.13.0",
     "oidc-op-express": "^0.0.3",
-    "rdflib": "^0.16.2",
+    "rdflib": "0.16.3",
     "recursive-readdir": "^2.1.0",
     "request": "^2.72.0",
     "rimraf": "^2.5.0",
@@ -106,24 +106,14 @@
     "nyc": "NODE_TLS_REJECT_UNAUTHORIZED=0 nyc mocha",
     "mocha": "NODE_TLS_REJECT_UNAUTHORIZED=0 mocha",
     "test": "npm run standard && npm run nyc",
-    "start": "npm run solid && start --verbose"
+    "start": "node ./bin/solid start --verbose"
   },
   "nyc": {
-    "reporter": [
-      "html",
-      "text-summary"
-    ],
+    "reporter": ["html", "text-summary"],
     "cache": true
   },
   "standard": {
-    "globals": [
-      "after",
-      "afterEach",
-      "before",
-      "beforeEach",
-      "describe",
-      "it"
-    ]
+    "globals": ["after", "afterEach", "before", "beforeEach", "describe", "it"]
   },
   "bin": {
     "solid": "./bin/solid"

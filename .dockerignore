@@ -1,0 +1,7 @@
+/examples
+/node_modules
+/test
+.gitignore
+CHANGELOG.md
+CONTRIBUTING.md
+EXAMPLES.md
