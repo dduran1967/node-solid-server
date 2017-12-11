@@ -1,6 +1,7 @@
 /examples
 /node_modules
 /test
+/.ssl/*
 .gitignore
 CHANGELOG.md
 CONTRIBUTING.md
